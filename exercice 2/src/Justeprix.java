@@ -16,13 +16,13 @@ public class Justeprix {
                 System.out.println("Donner un chiffre");
                 int proposition = scanner.nextInt();
                 tentative++;
-                
+
                 if (proposition == nombreJuste) {
                     long fin = System.currentTimeMillis();
                     long tempsTotal = fin - debut;
                     double tempsEnSecondes = tempsTotal / 1000.0;
 
-                    System.out.println("Bravo, vous avez trouvé le juste prix !");
+                    System.out.println("Bravo !");
                     System.out.println("Nombre de tentatives : " + tentative);
                     System.out.println("Temps écoulé : " + tempsEnSecondes + " secondes");
                     break;

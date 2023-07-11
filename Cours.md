@@ -421,7 +421,7 @@ int entier = 10;
 String chaine = "" + entier; // conversion implicite
 ```
 
-Exercice 4 :
+### Exercice 4 :
 
 Ecrire un programme qui demande à l’utilisateur de saisir un nombre entier et qui affiche sa valeur en binaire, octale et hexadécimale.
 
@@ -446,14 +446,14 @@ var chaine = "une chaine de caracteres";
 
 La programmatin orientee objet
 
-Exercice 5 :
+### Exercice 5 :
 
 Créer une classe représentant un article d’un magasin de vente par en ligne. Un article est caractérisé par sa référence, sa désignation, son prix. Créer ensuite une méthode main permettant de tester le bon fonctionnement de la classe précédente.
 
-Exercice 6 :
+### Exercice 6 :
 
 Créer une classe représentant un client d’un magasin de vente par en ligne. Un client est caractérisé par son nom, son prénom, son adresse, son code postal et sa ville. Créer ensuite une méthode main permettant de tester le bon fonctionnement de la classe précédente.
 
-Exercice 7 :
+### Exercice 7 :
 
 Créer une classe représentant une commande d’un magasin de vente par en ligne. Une commande est caractérisée par son numéro, sa date, le client qui passe la commande, le tableau des articles commandés et le tableau des quantités commandées pour chaque article. Créer ensuite une méthode main permettant de tester le bon fonctionnement de la classe précédente.
