@@ -15,11 +15,19 @@ public class Main {
         emails[8] = "vezv.devzzs@hotmail.com";
         emails[9] = "cebhv.bches@gmail.com";
 
+        double percentage = calculEmailPercentage(emails);
+        System.out.println("Pourcentage de fournisseurs de gmail : " + percentage + "%");
+    }
+    public static double calculEmailPercentage(String[] emails){
+
         // j'initialise totalEmails pour avoir le nombre total d'email
         int totalEmails = emails.length;
+
         // pareille mais j'initialise a 0 pour gmail (compteur)
         int gmailCount = 0;
+
         // je fais une boucle qui ajoute +1 a mon gmailCount chaque fois que a la fin de mon mail il y a gmail.com
+
         for (String email : emails) {
             if (email.endsWith("@gmail.com")) {
                 gmailCount++;
@@ -27,7 +35,7 @@ public class Main {
         }
         // je calcule le pourcentage de gmail
         double gmailPercentage = (gmailCount / (double) totalEmails) * 100;
-        System.out.println("Gmail : " + gmailPercentage + "%");
+        return gmailPercentage;
+    }
+}
 
-    }
-    }
