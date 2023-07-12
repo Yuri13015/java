@@ -1,28 +1,19 @@
-import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        int resultat = combinaison();
-        System.out.println("Nombre d'essais nécessaires : " + resultat);
+        Article article = new Article("lol","pull",19.99);
+
+        System.out.println("reference du produit: " +article.reference);
+        System.out.println("Designation: " +article.designation);
+        System.out.println("Prix: "+article.prix);
+
+        Client client = new Client("Payet","Dimitri","Robert luis dreyfus",13015,"Marseille");
+
+        System.out.println("Nom client: "+client.nom);
+        System.out.println("Prenom client: "+client.prenom);
+        System.out.println("Adresse client: "+client.adresse);
+        System.out.println("Code postal client: "+client.codePostal);
+        System.out.println("Ville du client: "+client.ville);
     }
 
-    public static int combinaison() {
-        Random random = new Random();
-        int resultat = 0;
-
-        while (true) {
-            int num1 = random.nextInt(1001); // Génère un nombre aléatoire entre 0 et 1000
-            int num2 = random.nextInt(1001);
-            int num3 = random.nextInt(1001);
-
-            if (num1 % 2 == 0 && num2 % 2 == 0 && num3 % 2 != 0) {
-                // La combinaison recherchée (pair, pair, impair)
-                break;
-            }
-
-            resultat++;
-        }
-
-        return resultat;
-    }
 }
