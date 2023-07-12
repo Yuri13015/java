@@ -1,0 +1,58 @@
++---------------------------------+
+|           Utilisateur           |
++---------------------------------+
+| - main(args: String[]): void    |
++---------------------------------+
+
+
++---------------------------------+
+|            Client               |
++---------------------------------+
+| - id: int                       |
+| - nom: String                   |
+| - prenom: String                |
+| - adresse: String               |
+| - codePostal: String            |
+| - ville: String                 |
+| - solde: double                 |
+| - historique: List<String>      |
++---------------------------------+
+| + Client(id: int, nom: String,   |
+|     prenom: String,              |
+|     adresse: String,             |
+|     codePostal: String,          |
+|     ville: String)               |
+| + getId(): int                  |
+| + getNom(): String              |
+| + getPrenom(): String           |
+| + getAdresse(): String          |
+| + getCodePostal(): String       |
+| + getVille(): String            |
+| + getSolde(): double            |
+| + getHistorique(): List<String> |
+| + setNom(nom: String): void     |
+| + setPrenom(prenom: String): void |
+| + setAdresse(adresse: String): void |
+| + setCodePostal(codePostal: String): void |
+| + setVille(ville: String): void |
+| + setSolde(solde: double): void |
+| + ajouterOperation(operation: String): void |
++---------------------------------+
+
+
+
+
++---------------------------------+
+|              ATM                |
++---------------------------------+
+| - clients: List<Client>         |
++---------------------------------+
+| + ATM()                         |
+| + creerCompte(client: Client): void |
+| + consulterSolde(client: Client): void |
+| + deposerArgent(client: Client, montant: double): void |
+| + retirerArgent(client: Client, montant: double): void |
+| + consulterHistorique(client: Client): void |
+| + modifierInfosClient(client: Client): void |
+| + getClientById(id: int): Client |
++---------------------------------+
