@@ -22,7 +22,7 @@ class Client {
         this.historique = new ArrayList<>();
     }
 
-    // Getters and setters
+    // Getters et setters
 
     public int getId() {
         return id;

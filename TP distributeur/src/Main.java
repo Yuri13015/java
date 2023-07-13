@@ -23,6 +23,11 @@ public class Main {
         boolean quit = false;
 
         //Création d'une boucle pour le menu principal
+        // Afficher le menu
+        // Obtenir l'entrée de l'utilisateur
+        // Exécuter les opérations correspondantes
+
+        // Si l'utilisateur choisit de quitter, modifier la variable quit à true pour sortir de la boucle while
         while (!quit) {
             System.out.println("\n Bienvenue que souhaitez-vous faire:");
             System.out.println("1. Créer un compte");
@@ -39,6 +44,10 @@ public class Main {
 
             switch (option) {
                 case 1:
+                    // Demande et lit les informations nécessaires pour créer un compte
+                    // Appele la méthode creerCompte() de la classe ATM
+                    // Affiche un message de succès ou d'erreur
+
                     System.out.print("Entrez l'ID du client : ");
                     int id = scanner.nextInt();
                     scanner.nextLine();
@@ -64,6 +73,10 @@ public class Main {
                     break;
 
                 case 2:
+                    // Demande et lit l'ID du client
+                    // Appele la méthode consulterSolde() de la classe ATM
+                    // Affiche le solde du compte
+
                     System.out.print("Entrez l'ID du client : ");
                     int clientId = scanner.nextInt();
                     scanner.nextLine();
